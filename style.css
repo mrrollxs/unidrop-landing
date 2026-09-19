@@ -1,0 +1,290 @@
+/* ==========================================================
+   TOKENS
+   ========================================================== */
+:root{
+  --bg: #0a0a0c;
+  --bg-alt: #16161a;
+  --accent: #00e6a8;
+  --accent-soft: rgba(0, 230, 168, 0.55);
+  --text-primary: #ffffff;
+  --text-secondary: #a6a6ad;
+  --border-faint: rgba(255, 255, 255, 0.07);
+  --max-width: 1140px;
+}
+
+*{ box-sizing: border-box; }
+
+html{ scroll-behavior: smooth; }
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  /* subtle diagonal grid texture, same feel as the Carrd background */
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.025) 0, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 64px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,0.025) 0, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 64px);
+}
+
+img{ max-width: 100%; display: block; }
+
+a{ color: inherit; text-decoration: none; }
+
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section{
+  padding: 96px 0;
+  border-top: 1px solid var(--border-faint);
+}
+
+.hero{ border-top: none; }
+
+.eyebrow{
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+h1{
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 20px;
+  letter-spacing: -0.01em;
+}
+
+h2{
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+h3{
+  font-size: 19px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+.lead{
+  color: var(--text-secondary);
+  font-size: 16px;
+  max-width: 480px;
+  margin: 0;
+}
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+.hero-grid{
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-media{ display: flex; justify-content: center; }
+
+.hero-card{
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4 / 5;
+  background: var(--bg-alt);
+  border: 1px solid var(--border-faint);
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.hero-icon{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ==========================================================
+   SECTION HEAD (centered intro used by features / download)
+   ========================================================== */
+.section-head{
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 56px;
+}
+
+.section-head .lead{ margin: 0 auto; }
+
+/* ==========================================================
+   FEATURES
+   ========================================================== */
+.feature-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.feature-card{
+  border-radius: 18px;
+  padding: 28px 28px;
+  text-align: center;
+}
+
+.feature-card--bordered{
+  border: 1.5px solid var(--accent-soft);
+  background: transparent;
+}
+
+.feature-card--filled{
+  background: var(--bg-alt);
+  border: 1.5px solid transparent;
+}
+
+.feature-icon{
+  width: 112px;
+  height: 112px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.feature-card h3{ color: var(--text-primary); }
+
+.feature-card p{
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ==========================================================
+   DOWNLOAD
+   ========================================================== */
+.platform-row{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.icon-circle{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle img{ width: 20px; height: 20px; object-fit: contain; }
+
+.icon-circle img.icon-android{ width: 26px; height: 26px; }
+
+.download-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.download-btn:hover{
+  background: var(--accent);
+  color: #06231a;
+}
+
+.download-btn img{ width: 16px; height: 16px; object-fit: contain; }
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+.footer-top{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 56px;
+}
+
+.footer-contact{
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-contact:hover{ opacity: 0.8; }
+
+.footer-title{
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-bottom{
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.footer-bottom a{
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-bottom a:hover{ color: var(--accent); }
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+@media (max-width: 860px){
+  h1{ font-size: 34px; }
+  h2{ font-size: 27px; }
+
+  .hero-grid{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .hero-media{ order: 2; }
+  .hero-text{ order: 1; }
+
+  .lead{ max-width: 100%; }
+
+  .feature-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .section{ padding: 64px 0; }
+}
+
+@media (max-width: 520px){
+  h1{ font-size: 29px; }
+  h2{ font-size: 24px; }
+
+  .platform-row{ flex-wrap: wrap; }
+}

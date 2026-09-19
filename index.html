@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UniDrop — Easily share files and clipboard between any device</title>
+<meta name="description" content="UniDrop unifica file, link e clipboard sharing in un'unica app semplice e veloce, per tutti i tuoi dispositivi.">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<section class="section hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">UNIDROP</p>
+      <h1>Easily share files and clipboard between any device.</h1>
+      <p class="lead">Forget emails, cables, and complicated services. UniDrop unifies file, link, and clipboard sharing into one simple, fast app. For all your devices.</p>
+    </div>
+    <div class="hero-media">
+      <div class="hero-card">
+        <img src="images/hero-icon.png" alt="Icona di condivisione file UniDrop" class="hero-icon">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section features">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">UNIDROP</p>
+      <h2>One App, Three Ways to Share</h2>
+      <p class="lead">UniDrop integrates three powerful tools into a single, clean, and functional interface.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card feature-card--bordered">
+        <div class="feature-icon">
+          <img src="images/icon-link.png" alt="Icona link">
+        </div>
+        <h3>Share Anywhere, with a Link.</h3>
+        <p>Send files to any device, anywhere in the world, with a simple web link valid for 24 hours. Lost the link? No problem. You'll find all your generated links from the last 24 hours in your history.</p>
+      </div>
+
+      <div class="feature-card feature-card--filled">
+        <div class="feature-icon">
+          <img src="images/icon-nearby.png" alt="Icona condivisione nelle vicinanze">
+        </div>
+        <h3>Effortless Nearby Sharing.</h3>
+        <p>Send a photo, video, or document to any nearby device in a flash. Forget operating system and network barriers and share with ultimate simplicity.</p>
+      </div>
+
+      <div class="feature-card feature-card--bordered">
+        <div class="feature-icon">
+          <img src="images/icon-clipboard.png" alt="Icona clipboard">
+        </div>
+        <h3>Your Clipboard, On Command.</h3>
+        <p>Pair your devices and use the quick sync button to send copied text from one screen to another. Simple and fast.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD ============ -->
+<section class="section download">
+  <div class="container section-head">
+    <p class="eyebrow">UNIDROP</p>
+    <h2>Available Everywhere You Work.</h2>
+
+    <div class="platform-row">
+      <span class="icon-circle">
+        <img src="images/icon-apple.svg" alt="Disponibile su Apple">
+      </span>
+      <span class="icon-circle">
+        <img src="images/icon-android.svg" alt="Disponibile su Android" class="icon-android">
+      </span>
+      <span class="icon-circle">
+        <img src="images/icon-windows.png" alt="Disponibile su Windows">
+      </span>
+    </div>
+
+    <!-- link alla pagina di download (stesso sito, cartella /download) -->
+    <a href="download/" class="download-btn">
+      <span>Download</span>
+      <img src="images/icon-download.svg" alt="">
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="section footer">
+  <div class="container footer-top">
+    <a href="mailto:unidrop.app@gmail.com" class="footer-contact">
+      <span class="footer-title">Contact us!</span>
+      <span class="icon-circle" aria-hidden="true">
+        <img src="images/icon-mail.svg" alt="">
+      </span>
+    </a>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> getunidrop.app | <a href="https://htmlpreview.github.io/?https://gist.githubusercontent.com/mrrollxs/1e729630d2fc4e39996c9472dfe00812/raw/f1b31f10afc0c591bf0d191203cd925da1d35d8b/privacy-policy.html">Privacy Policy</a> | <a href="https://htmlpreview.github.io/?https://gist.githubusercontent.com/mrrollxs/3b09e021489aa4708fdbfb7f42820439/raw/f1c7b82ce6d5c4605d9c54c8f6bb31232483409f/terms-and-conditions.html">Terms &amp; Conditions</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
